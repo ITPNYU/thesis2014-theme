@@ -28,6 +28,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
         line-height: 1.0909090909;
         margin-bottom: 12px;
         margin: 0 0 12px 0;
-        text-transform: uppercase;
+}
+
+/**
+ * 9.0 Featured Content
+ * -----------------------------------------------------------------------------
+ */
+
+.featured-content .entry-title {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.3333333333;
+        margin: 0;
 }
 
