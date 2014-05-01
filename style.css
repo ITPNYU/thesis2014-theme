@@ -16,3 +16,18 @@ Use it to make something cool, have fun, and share what you've learned with othe
 */
 
 @import url("../twentyfourteen/style.css");
+
+/**
+ * 6.2 Entry Header
+ * -----------------------------------------------------------------------------
+ */
+
+.entry-title {
+        font-size: 33px;
+        font-weight: 300;
+        line-height: 1.0909090909;
+        margin-bottom: 12px;
+        margin: 0 0 12px 0;
+        text-transform: uppercase;
+}
+
