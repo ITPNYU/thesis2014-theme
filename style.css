@@ -17,74 +17,11 @@ Use it to make something cool, have fun, and share what you've learned with othe
 
 @import url("../twentyfourteen/style.css");
 
-/* #76c8b2 */
-
-/**
- * 1.0 Reset
- */
-
-a {
-        color: #469882;
-}
-
-a:active,
-a:hover {
-        color: #76c8b2;
-}
-
-::selection {
-        background: #76c8b2;
-        color: #fff;
-        text-shadow: none;
-}
-
-::-moz-selection {
-        background: #76c8b2;
-        color: #fff;
-        text-shadow: none;
-}
 
 /**
  * 2.0 Repeatable Patterns
  * -----------------------------------------------------------------------------
  */
-
-button:active,
-.contributor-posts-link:active,
-input[type="button"]:active,
-input[type="reset"]:active,
-input[type="submit"]:active {
-        background-color: #76c8b2;
-}
-
-.search-toggle {
-        background-color: #76c8b2;
-}
-
-.search-box {
-        background-color: #76c8b2;
-}
-
-.hentry .mejs-controls .mejs-time-rail .mejs-time-current {
-        background: #76c8b2;
-}
-
-/**
- * 5.0 Navigation
- * -----------------------------------------------------------------------------
- */
-
-.site-navigation a:hover {
-        color: #86d8c2;
-}
-
-.site-navigation .current_page_item > a,
-.site-navigation .current_page_ancestor > a,
-.site-navigation .current-menu-item > a,
-.site-navigation .current-menu-ancestor > a {
-        color: #76c8b2;
-}
-
 
 /**
  * 6.2 Entry Header
@@ -95,86 +32,11 @@ input[type="submit"]:active {
         text-transform: none;
 }
 
-.entry-title a {
-        color: #469882;
-}
-
-.entry-title a:hover {
-        color: #86d8c2;
-}
-
-/**
- * 6.4 Entry Content
- * -----------------------------------------------------------------------------
- */
-
-.page-links a:hover {
-        background: #76c8b2;
-        border: 1px solid #76c8b2;
-        color: #fff;
-}
-
-/**
- * 6.7 Post/Image/Paging Navigation
- * -----------------------------------------------------------------------------
- */
-
-.paging-navigation .page-numbers.current {
-        border-top: 5px solid #76c8b2;
-}
-
-/**
- * 7.2 Content Sidebar Widgets
- * -----------------------------------------------------------------------------
- */
-.content-sidebar .widget input[type="button"]:active,
-.content-sidebar .widget input[type="reset"]:active,
-.content-sidebar .widget input[type="submit"]:active {
-        background-color: #76c8b2;
-}
-
 /**
  * 9.0 Featured Content
  * -----------------------------------------------------------------------------
  */
 
 .featured-content .entry-title {
-        font-size: 18px;
-        font-weight: 300;
-        line-height: 1.3333333333;
-        margin: 0;
         text-transform: none;
-}
-
-/**
- * 11.0 Media Queries
- * -----------------------------------------------------------------------------
- */
-
-@media screen and (min-width: 783px) {
-        .primary-navigation ul ul {
-                background-color: #76c8b2;
-        }
-
-        .primary-navigation ul ul a:hover,
-        .primary-navigation ul ul li.focus > a {
-                background-color: #86d8c2;
-        }
-
-        .secondary-navigation ul ul {
-                background-color: #76c8b2;
-        }
-}
-
-@media screen and (min-width: 1008px) {
-        .secondary-navigation li:hover > a,
-        .secondary-navigation li.focus > a {
-                background-color: #76c8b2;
-                color: #fff;
-        }
-
-        .secondary-navigation ul ul a:hover,
-        .secondary-navigation ul ul li.focus > a {
-                background-color: #86d8c2;
-        }
 }
