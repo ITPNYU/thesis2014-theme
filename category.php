@@ -29,24 +29,18 @@ get_header(); ?>
 			</header><!-- .archive-header -->
 
 			<?php
-					echo "<ul>\n";
 					// Start the Loop.
-					while ( have_posts() ) : the_post();
-
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					//get_template_part( 'content', get_post_format() );
-					echo "<li>";
-					the_title();
-					echo "</li>\n";
-
-					endwhile;
-					echo "</ul>\n";
-					// Previous/next page navigation.
-					//twentyfourteen_paging_nav();
+					$category_posts = get_posts(array(
+						'posts_per_page' => -1,
+						'orderby' => 'title',
+						'order' => 'ASC'
+					));
+					foreach ( (array) $featured_posts as $order => $post ) :
+						setup_postdata($post);
+						get_template_part( 'content', featured-post );
+					endforeach;
+					do_action( 'twentyfourteen_featured_posts_after' );
+					wp_reset_postdata();
 
 				else :
 					// If no content, include the "No posts found" template.
