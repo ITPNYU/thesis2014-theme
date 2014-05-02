@@ -18,10 +18,11 @@
 		<?php
 			endif;
 
-			the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
-			echo " - <em>" . get_post_meta( get_the_ID(), 'student', true ) . "</em><br />\n";
+			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
+			echo "<em>" . get_post_meta( get_the_ID(), 'student', true) . "</em>\n";
 		?>
 
+		<div class="entry-meta">
 			<?php
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>
@@ -31,7 +32,9 @@
 
 				edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
 			?>
+		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+	echo "<p>" . get_post_meta( get_the_ID(), 'elevator_pitch', true) . "</p>\n";
 
 	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 </article><!-- #post-## -->
