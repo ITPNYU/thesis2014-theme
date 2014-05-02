@@ -34,7 +34,9 @@
 			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+	<?php
 	echo "<p>" . get_post_meta( get_the_ID(), 'elevator_pitch', true) . "</p>\n";
+	?>
 
 	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 </article><!-- #post-## -->
