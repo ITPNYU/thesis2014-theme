@@ -31,7 +31,7 @@ get_header(); ?>
 			<?php
 					// Start the Loop.
 					$category_posts = get_posts(array(
-						'category' => get_the_category(),
+						//'category' => get_the_category(),
 						'posts_per_page' => -1,
 						'orderby' => 'title',
 						'order' => 'ASC'
