@@ -106,6 +106,16 @@ input[type="submit"]:active {
 }
 
 /**
+ * 7.2 Content Sidebar Widgets
+ * -----------------------------------------------------------------------------
+ */
+.content-sidebar .widget input[type="button"]:active,
+.content-sidebar .widget input[type="reset"]:active,
+.content-sidebar .widget input[type="submit"]:active {
+        background-color: #76c8b2;
+}
+
+/**
  * 9.0 Featured Content
  * -----------------------------------------------------------------------------
  */
