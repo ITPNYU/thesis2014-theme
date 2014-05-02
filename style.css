@@ -49,6 +49,14 @@ a:hover {
  * -----------------------------------------------------------------------------
  */
 
+button:active,
+.contributor-posts-link:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+        background-color: #76c8b2;
+}
+
 .search-toggle {
         background-color: #76c8b2;
 }
@@ -56,6 +64,23 @@ a:hover {
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {
         background: #76c8b2;
 }
+
+/**
+ * 5.0 Navigation
+ * -----------------------------------------------------------------------------
+ */
+
+.site-navigation a:hover {
+        color: #86d8c2;
+}
+
+.site-navigation .current_page_item > a,
+.site-navigation .current_page_ancestor > a,
+.site-navigation .current-menu-item > a,
+.site-navigation .current-menu-ancestor > a {
+        color: #76c8b2;
+}
+
 
 /**
  * 6.2 Entry Header
