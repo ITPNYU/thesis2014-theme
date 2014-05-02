@@ -29,7 +29,7 @@ a {
 
 a:active,
 a:hover {
-        color: #86d8c2;
+        color: #76c8b2;
 }
 
 ::selection {
@@ -61,6 +61,10 @@ input[type="submit"]:active {
         background-color: #76c8b2;
 }
 
+.search-box {
+        background-color: #76c8b2;
+}
+
 .hentry .mejs-controls .mejs-time-rail .mejs-time-current {
         background: #76c8b2;
 }
@@ -88,12 +92,26 @@ input[type="submit"]:active {
  */
 
 .entry-title {
-        font-size: 33px;
-        font-weight: 300;
-        line-height: 1.0909090909;
-        margin-bottom: 12px;
-        margin: 0 0 12px 0;
         text-transform: none;
+}
+
+.entry-title a {
+        color: #469882;
+}
+
+.entry-title a:hover {
+        color: #86d8c2;
+}
+
+/**
+ * 6.4 Entry Content
+ * -----------------------------------------------------------------------------
+ */
+
+.page-links a:hover {
+        background: #76c8b2;
+        border: 1px solid #76c8b2;
+        color: #fff;
 }
 
 /**
