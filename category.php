@@ -32,7 +32,7 @@ get_header(); ?>
 					// Start the Loop.
 					$cat_id = get_queried_object()->term_id;
 					$category_posts = get_posts(array(
-						'category' => $cat_id(),
+						'category' => $cat_id,
 						'posts_per_page' => -1,
 						'orderby' => 'title',
 						'order' => 'ASC'
