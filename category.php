@@ -35,7 +35,7 @@ get_header(); ?>
 						'orderby' => 'title',
 						'order' => 'ASC'
 					));
-					foreach ( (array) $featured_posts as $order => $post ) :
+					foreach ( (array) $category_posts as $order => $post ) :
 						setup_postdata($post);
 						get_template_part( 'content', featured-post );
 					endforeach;
