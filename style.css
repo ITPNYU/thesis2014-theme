@@ -93,3 +93,35 @@ a:hover {
         text-transform: none;
 }
 
+/**
+ * 11.0 Media Queries
+ * -----------------------------------------------------------------------------
+ */
+
+@media screen and (min-width: 783px) {
+        .primary-navigation ul ul {
+                background-color: #76c8b2;
+        }
+
+        .primary-navigation ul ul a:hover,
+        .primary-navigation ul ul li.focus > a {
+                background-color: #86d8c2;
+        }
+
+        .secondary-navigation ul ul {
+                background-color: #76c8b2;
+        }
+}
+
+@media screen and (min-width: 1008px) {
+        .secondary-navigation li:hover > a,
+        .secondary-navigation li.focus > a {
+                background-color: #76c8b2;
+                color: #fff;
+        }
+
+        .secondary-navigation ul ul a:hover,
+        .secondary-navigation ul ul li.focus > a {
+                background-color: #86d8c2;
+        }
+}
