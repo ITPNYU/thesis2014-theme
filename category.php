@@ -37,9 +37,8 @@ get_header(); ?>
 					));
 					foreach ( (array) $category_posts as $order => $post ) :
 						setup_postdata($post);
-						get_template_part( 'content', featured-post );
+						get_template_part( 'content', 'listview');
 					endforeach;
-					do_action( 'twentyfourteen_featured_posts_after' );
 					wp_reset_postdata();
 
 				else :
