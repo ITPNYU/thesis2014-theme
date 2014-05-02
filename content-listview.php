@@ -18,11 +18,8 @@
 		<?php
 			endif;
 
-			if ( is_single() ) :
-				the_title( '<h1 class="entry-title">', '</h1>' );
-			else :
-				the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
-			endif;
+			the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
+			echo " - <em>" . get_post_meta( get_the_ID(), 'student', true ) . "</em><br />\n";
 		?>
 
 		<div class="entry-meta">
@@ -37,12 +34,6 @@
 			?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
-
-	<?php if ( is_search() ) : ?>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-	<?php endif; ?>
 
 	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 </article><!-- #post-## -->
