@@ -16,7 +16,7 @@
 			endif;
 			echo "<li>";
 			the_title( '<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a>' );
-			echo "- <em>" . get_post_meta( get_the_ID(), 'student', true) . "</em></li>\n";
+			echo " - <em>" . get_post_meta( get_the_ID(), 'student', true) . "</em></li>\n";
 		?>
 
 	</header><!-- .entry-header -->
