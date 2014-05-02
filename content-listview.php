@@ -13,6 +13,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php twentyfourteen_post_thumbnail(); ?>
 
+	<header class="entry-header">
 		<?php if ( in_array( 'category', get_object_taxonomies( get_post_type() ) ) && twentyfourteen_categorized_blog() ) : ?>
 		<?php
 			endif;
@@ -21,7 +22,6 @@
 			echo " - <em>" . get_post_meta( get_the_ID(), 'student', true ) . "</em><br />\n";
 		?>
 
-		<div class="entry-meta">
 			<?php
 				if ( ! post_password_required() && ( comments_open() || get_comments_number() ) ) :
 			?>
@@ -31,7 +31,7 @@
 
 				edit_post_link( __( 'Edit', 'twentyfourteen' ), '<span class="edit-link">', '</span>' );
 			?>
-		</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
 
 	<?php the_tags( '<footer class="entry-meta"><span class="tag-links">', '', '</span></footer>' ); ?>
 </article><!-- #post-## -->
