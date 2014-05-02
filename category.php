@@ -39,7 +39,9 @@ get_header(); ?>
 					 * (where ___ is the post format) and that will be used instead.
 					 */
 					//get_template_part( 'content', get_post_format() );
-					echo "<li>" . the_title() . "</li>\n";
+					echo "<li>";
+					the_title();
+					echo "</li>\n";
 
 					endwhile;
 					echo "</ul>\n";
