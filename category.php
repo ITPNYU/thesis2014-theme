@@ -37,10 +37,12 @@ get_header(); ?>
 						'orderby' => 'title',
 						'order' => 'ASC'
 					));
+					echo "<ul>\n";
 					foreach ( (array) $category_posts as $order => $post ) :
 						setup_postdata($post);
 						get_template_part( 'content', 'listview');
 					endforeach;
+					echo "</ul>\n";
 					wp_reset_postdata();
 
 				else :
