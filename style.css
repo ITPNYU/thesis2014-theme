@@ -40,12 +40,3 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .featured-content .entry-title {
         text-transform: none;
 }
-
-/**
- * 11.0 Media Queries
- * -----------------------------------------------------------------------------
- */
-
-.site-content-full {
-        margin-right: 5px;
-}
