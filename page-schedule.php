@@ -15,7 +15,7 @@ get_header(); ?>
 	}
 ?>
 	<div id="primary" class="content-area">
-		<div id="content" role="main">
+		<div id="content" class="site-content-full" role="main">
 
 			<?php
 				// Start the Loop.
