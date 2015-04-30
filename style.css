@@ -3,8 +3,8 @@ Theme Name: 2014 ITP Thesis Week
 Theme URI: http://github.com/ITPNYU/thesis2014-theme
 Author: NYU ITP
 Author URI: http://itp.nyu.edu
-Description: Wordpress theme for ITP Thesis 2014 site, based on Twenty Fourteen
-Version: 1.0
+Description: Wordpress theme for ITP Thesis site, based on Twenty Fourteen
+Version: 1.1
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Tags: black, green, white, light, dark, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, responsive-layout, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready, accessibility-ready
@@ -14,9 +14,6 @@ Text Domain: thesis2014-theme
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
-@import url("../twentyfourteen/style.css");
-
 
 /**
  * 2.0 Repeatable Patterns
